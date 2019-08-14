@@ -4,5 +4,12 @@ let Schema = mongoose.Schema;
 
 //Definir el esquema para el modelo Producto (Valor 5 puntos)
 
+let productoSchema = new Schema({
+    nombre: {type: String, require: true},
+    precio: {type: let, require: true},
+    creado_en: {type: Date, default: Date.now()}
+    
 
-module.exports = mongoose.model('Producto', usuarioSchema);
+});
+
+module.exports = mongoose.model('Producto', productoSchema);

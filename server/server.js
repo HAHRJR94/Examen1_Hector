@@ -25,3 +25,4 @@ mongoose.connect('mongodb://localhost:27017/tienda', { useNewUrlParser: true }, 
 app.listen(process.env.PORT, () => {
     console.log('Escuchando puerto: ', process.env.PORT);
 });
+
